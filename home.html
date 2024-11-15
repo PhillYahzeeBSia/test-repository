@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Test </title>
-<style>
-  .sprite1:link {
-	  background: url('testspritepic.png') no-repeat -79px -79px;
-	  width: 33px;
-	  height: 33px;
-    }
+  <style>
+    a.one:link {color:red;}
+    a.one:visited {color:blue;}
+    a.one:hover {color:#orange;}
 
-  a.one:hover {
-	  background: url('testspritepic.png') no-repeat -79px -22px;
-	  width: 33px;
-	  height: 33px;
-    }
+    a.two:link {color:red;}
+    a.two:visited {color:blue;}
+    a.two:hover {font-size:150%;}
 
-  .sprite2:link {
-	  background: url('testspritepic.png') no-repeat 253px -79px;
-	  width: 33px;
-	  height: 33px;
-    }
-
-  a.two:hover {
-	  background: url('testspritepic.png') no-repeat -253px -21px;
-	  width: 33px;
-	  height: 33px;
-    }
-
-  }
-</style>
+    a.three:link {color:red;}
+    a.three:visited {color:blue;}
+    a.three:hover {background:orange;} 
+    
+    a.four:link {color:red;}
+    a.four:visited {color:blue;}
+    a.four:hover {font-family:monospace;}
+	
+    a.five:link {color:red;text-decoration:none;}
+    a.five:visited {color:blue;text-decoration:none;}
+    a.five:hover {text-decoration:underline;}
+  </style>
 </head>
 <body>
-      <a class = "one" href = "https://www.dribbble.com"> <div class = "sprite1"> </div> </a>
-      <a class = "two" href = "https://www.twitter.com"> <div class = "sprite2"> </div> </a>
-    <p> Hello! </p>
+  <p>Mouse over the links:</p>
+  <p><b><a class="one" href=# >This link changes color</a></p>
+  <p><b><a class="two" href=#>This link changes font-size</a></p>
+  <p><b><a class="three" href=#>This link changes background-color</a></b></p>
+  <p><b><a class="four" href=#>This link changes font-family</a></p>
+  <p><b><a class="five" href=#>This link changes text-decoration</a></p>
 </body>
 </html>
